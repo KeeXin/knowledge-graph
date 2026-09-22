@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>前端 &amp; AI Agent 知识图谱</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23eaf1f8'/%3E%3Ctext x='32' y='41' font-family='-apple-system,Helvetica,Arial' font-size='24' font-weight='600' fill='%232e5e8c' text-anchor='middle'%3EKG%3C/text%3E%3C/svg%3E" />
+    <meta name="description" content="8 个领域 · 174 个模块 · 1594 个面试点的前端与 AI Agent 知识图谱阅读器" />
+    <script>
+      // 首屏前定主题，避免闪白（usePersistent 存的是 JSON，所以这里是 "dark" / "light"）
+      try {
+        var saved = localStorage.getItem('kg.theme');
+        var dark = false;
+        if (saved !== null) {
+          try {
+            dark = JSON.parse(saved) === 'dark';
+          } catch (e) {
+            dark = saved === 'dark';
+          }
+        } else {
+          dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+        if (dark) document.documentElement.dataset.theme = 'dark';
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="./assets/index-DkoxmxDh.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/vendor-naive-BvPPHeK-.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-Bi6f89z8.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="boot">
+        <div class="boot-mark">KG</div>
+        <p>正在加载知识图谱…</p>
+      </div>
+    </div>
+  </body>
+</html>
